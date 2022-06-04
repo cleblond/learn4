@@ -220,7 +220,7 @@ table th { border-bottom-width: 0.1rem; }
 
 .table-keycol table tr > td:first-child, .table-keycol table tr > th:first-child { white-space: nowrap; width: 15%; }
 
-img, .video-container { max-width: 100%; margin: 3rem auto; display: block; text-align: center; }
+img, .video-container { max-width: 100%; display: block; text-align: center; }
 
 img.border, .video-container.border { border: 2px solid #e6e6e6 !important; padding: 2px; }
 
