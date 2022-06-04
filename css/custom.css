@@ -1,0 +1,430 @@
+/*
+===============================================================================================================================
+Put your custom CSS in this file.
+===============================================================================================================================
+*/
+
+
+
+
+
+
+
+
+.login-status-wrapper {
+margin-left: 1em;
+justify-content: space-between;
+}
+
+
+#login-elements img {
+
+margin: 0;
+}
+
+
+#login-elements a.github-link {
+    font-size: inherit !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+
+#login-bar #login-elements {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+#login-bar #login-elements > a, #login-bar #login-elements span {
+    width: 15%;
+    text-align: center;
+    border-left: 1px solid #edeef1;
+    margin-left: auto;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#login-bar #login-elements > a:hover {
+    background: #edeef1;
+    color: #0e51ab;
+}
+
+
+#login-elements a.github-link {
+    font-size: inherit !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+
+#login-bar {
+    /*position: fixed;*/
+    display: -ms-flexbox;
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 1px solid #edeef1;
+    z-index: 3;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 14rem;
+}
+
+
+.eo_jsmol {
+
+border: 10;
+
+}
+
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+
+
+#body img, #body .video-container {
+    margin: 0rem auto;
+    display: block;
+    text-align: center;
+}
+
+
+div[id$='_appletinfotablediv']{
+  
+  border: 5px solid #f1f9f1 ;
+border-radius: 3px;
+}
+
+
+input,
+label,
+select {
+  display: inline; 
+  }
+
+#chapter h1 {
+    font-size: 3.25rem;
+    border-bottom: 4px solid #F0F2F4;
+}
+
+
+
+/* CSS to style Presentation Plugin slides */
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: unset !important;
+}
+
+
+#header .logo img, #header .logo svg {
+    display: inherit;
+    /*height: 70px;*/
+}
+
+.iframe-container {
+  /* overflow: hidden; */
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.eo_jsmol > div {
+
+margin: 0 auto;
+
+}
+
+.editpage {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 80px; 
+
+  padding: 5px 6px;
+  background: #F67E40;
+  color: #fff;
+  
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.notes_text {
+
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  border-left: 10px solid #0090D9;
+  border-right: 10px solid #0090D9;
+   background: #f3f1f9;
+   color: #0090D9;
+   border-radius: 5px;
+   padding-left: 1em;
+   padding-bottom: 0.4em;
+}
+.notes_text legend {
+ color: #0090D9;
+ margin-bottom: 0.4em;
+}
+
+
+.pitfall_text {
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  border-left: 10px solid #d61448;
+    border-right: 10px solid #d61448;
+    background: #f9f1f3;
+    color: red;
+   border-radius: 5px;  
+   padding-left: 1em;
+   padding-bottom: 0.4em;
+}
+
+.pitfall_text legend {
+ color: red;
+ margin-bottom: 0.4em;
+}
+
+
+.action_text {
+
+
+ 
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ border-left: 10px solid #5cb85c;
+ border-right: 10px solid #5cb85c;
+ background: #f1f9f1;
+ color: #3d8b3d;
+ border-radius: 5px;
+ padding-left: 1em;
+ padding-bottom: 0.4em;
+}
+
+.action_text legend {
+ color: green;
+ margin-bottom: 0.4em;
+}
+
+
+.action_text ul {
+
+margin-top: 0em;
+margin-bottom: 0em;
+  
+}
+
+.action_text legend {
+ color: green;
+}
+
+
+
+
+
+/*
+.action_text:before {
+    font-family: FontAwesome;
+    content: "\f195";
+}
+*/
+
+
+
+
+
+
+
+
+.notices {
+    padding: 1px 1px 1px 30px;
+    margin: 15px 0;
+}
+
+.notices p {
+
+}
+
+.notices.yellow {
+    border-left: 10px solid #f0ad4e;
+    background: #fcf8f2;
+    color: #df8a13;
+}
+
+.notices.red {
+    border-left: 10px solid #d9534f;
+    background: #fdf7f7;
+    color: #b52b27;
+}
+
+.notices.blue {
+    border-left: 10px solid #5bc0de;
+    background: #f4f8fa;
+    color: #28a1c5;
+}
+
+.notices.green {
+    border-left: 10px solid #5cb85c;
+    background: #f1f9f1;
+    color: #3d8b3d;
+}
+
+
+.action-btn {
+
+  display: inline-block;
+  padding: 7px; 
+  background: #5cb85c;
+  color: #fff;
+  box-shadow: 0 3px 0 #52a552;
+  border: none;
+  border-radius: 7px; 
+ }
+  
+.action-btn:active, .action-btn-secondary:active {
+  margin: 2px 0 -2px 0;
+}
+
+.action-btn:hover {
+    background: #138a13;
+    box-shadow: 0 3px 0 #52a552;
+    color: #fff;
+}
+.action-btn:active {
+    box-shadow: 0 1px 0 #52a552;
+}
+
+.action-btn-sm {
+  margin: 2px 2px 2px 2px;
+  display: inline-block;
+  padding: 3px 12px; 
+  background: #5cb85c;
+  color: #fff;
+  box-shadow: 0 3px 0 #52a552;
+  border: none;
+  border-radius: 7px;
+  }
+  
+.action-btn-sm:active, .action-btn-sm-secondary:active {
+  margin: 2px 0 -2px 0;
+}
+
+.action-btn-sm:hover {
+    background: #138a13;
+    box-shadow: 0 3px 0 #52a552;
+    color: #fff;
+}
+.action-btn-sm:active {
+    box-shadow: 0 1px 0 #52a552;
+}
+
+@media print {
+	.noprint {display:none}
+	.printonly {display:block}
+}
+@media screen {
+	.noprint {display:block}
+	.printonly {display:none}
+}
+
+
+/*add extra level of collapse*/
+/* Hides the sub-menu item if parent not active */
+.dd-item .dd-item ul li {
+    display: none;
+}
+
+.dd-item .dd-item.active ul li,
+.dd-item.parent > ul > li {
+    display: block;
+}
+
+/* Hides the sub-sub-menu menu-item if parent not active */
+.dd-item.parent > ul > li.dd-item.active > ul > li > ul > li {
+    display: none;
+}
+
+.dd-item.parent > ul > li.dd-item.active > ul > li {
+    display: block;
+}
+
+.search-wrapper .search-input {
+	width: 80%;
+	display: inline-block;
+    background-color: #eee;
+    color: #555;
+	
+}
+
+.search-submit {
+	display: inline-block;
+	border-radius: 4px;
+	background: #eee;
+	border: 1px solid #ccc;
+	vertical-align: top;
+	height: 34px;
+}
+
+.search-submit img {
+	width: 30px;
+	vertical-align: middle;
+}
+
+.search-image {
+	float: left;
+}
+
+.search-item {
+	margin-left: 130px;
+	margin-bottom: 50px;
+}
+
+.search-item p {
+	margin: 0;
+}
+
+.search-title h3 {
+	margin: 0;
+}
+
+.search-details {
+	font-size: 13px;
+}
+
+.search-row:last-child hr {
+	display: none;
+}
+
+

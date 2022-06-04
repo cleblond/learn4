@@ -1,0 +1,72 @@
+<div id="login-bar">
+
+
+  <div id="login-elements">
+
+
+
+
+            <a class="github-link tooltip tooltip-bottom" data-tooltip = "2D Editor" target="_blank" href="{{base_url}}/2d-editor"><img width="40" height="40" src="/learn/structures/chemistry_black.svg"/></a>
+            <a class="github-link tooltip tooltip-bottom" data-tooltip = "3D Model Kit" target="_blank" href="{{base_url}}/model-kit"><img width="40" height="40" src="/learn/structures/molecular_black.svg"/></a>
+            <a class="github-link tooltip tooltip-bottom" data-tooltip = "Periodic Table" target="_blank" href="{{base_url}}/periodic-table"></i><img width="40" height="40" src="/learn/structures/periodic-table_black.svg"/></a>
+            
+
+
+
+
+              {% if config.plugins.login.enabled and grav.user.username %}
+                           <span>{% include 'partials/login-status.html.twig' %}</span>
+              {% else %}
+                            <span> <a href="{{base_url}}/login"><i class="fa fa-user"></i> Login</a></span>
+              {% endif %}
+
+   </div>
+
+</div>
+
+<div id="top-bar">
+  {% if  github_link_position == 'top' %}
+    <div id="top-github-link">
+      {% include 'partials/github_link.html.twig' %}
+    </div>
+  {% endif %}
+
+  {% if config.plugins.breadcrumbs.enabled %}
+    {% include 'partials/breadcrumbs.html.twig' %}
+  {% endif %}
+
+  <div id="navigation">
+
+
+    
+    {% if config.plugins.admin.enabled and authorize(['admin.pages', 'admin.super']) %}
+              {% if page.link == '/' %}
+                {% set editPagePath = "/" ~ page.slug %}
+              {% else %}
+                {% set editPagePath = uri.path %}
+              {% endif %}
+              <a class="github-link tooltip tooltip-bottom" data-tooltip="Edit this page" href="/learn/admin/pages{{ editPagePath }}"><i class="fa fa-pencil-square"></i>Edit</a>
+    {% endif %}
+    
+    
+    
+    
+    
+    
+    
+    
+    {% if not progress.isFirst(page.path) %}
+      <a class="nav-prev tooltip tooltip-bottom" data-tooltip="Previous Page [&larr;]" href="{{ progress.nextSibling(page.path).url }}"> <i class="fa fa-angle-left"></i></a>
+    {% else %}
+      <span class="disabled"><i class="fa fa-angle-left"></i></span>
+    {% endif %}
+    {% if not progress.isLast(page.path) %}
+      <a class="nav-next tooltip tooltip-bottom" data-tooltip="Next Page [&rarr;]" href="{{ progress.prevSibling(page.path).url }}"><i class="fa fa-angle-right"></i></a>
+    {% else %}
+      <span class="disabled"><i class="fa fa-angle-right"></i></span>
+    {% endif %}
+  </div>
+  <div class="progress"></div>
+</div>
+
+
