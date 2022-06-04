@@ -5,11 +5,11 @@
 
 
 
-
+        {% if config.plugins.login.enabled and grav.user.username %}
             <a class="github-link tooltip tooltip-bottom" data-tooltip = "2D Editor" target="_blank" href="{{base_url}}/2d-editor"><img width="40" height="40" src="/learn/structures/chemistry_black.svg"/></a>
             <a class="github-link tooltip tooltip-bottom" data-tooltip = "3D Model Kit" target="_blank" href="{{base_url}}/model-kit"><img width="40" height="40" src="/learn/structures/molecular_black.svg"/></a>
             <a class="github-link tooltip tooltip-bottom" data-tooltip = "Periodic Table" target="_blank" href="{{base_url}}/periodic-table"></i><img width="40" height="40" src="/learn/structures/periodic-table_black.svg"/></a>
-            
+        {% endif %}
 
 
 
