@@ -1,6 +1,6 @@
 .off-canvas { min-height: 100vh; }
 
-.off-canvas .off-canvas-toggle { position: fixed; top: 0.3rem; left: 0.3rem; width: 1.6rem; height: 1.6rem; padding-top: .15rem; z-index: 3; font-size: 16px !important; }
+.off-canvas .off-canvas-toggle { position: fixed; top: 0.3rem; left: 0.3rem; width: 1.6rem; height: 1.6rem; padding-top: .15rem; z-index: 4; font-size: 16px !important; }
 
 .off-canvas .off-canvas-content { padding: inherit; }
 
