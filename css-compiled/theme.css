@@ -242,7 +242,7 @@ ul li, ol li { padding-top: 0; }
 
 .button-primary:active, .button-primary.active { background: #1163d1; border-color: #105cc3; color: #fff; }
 
-#chapter { max-width: 600px; margin: 0 auto; }
+#chapter { max-width: 800px; margin: 0 auto; }
 
 #chapter h3 { opacity: 0.7; }
 
