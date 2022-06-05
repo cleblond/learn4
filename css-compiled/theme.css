@@ -20,7 +20,7 @@
 
 .off-canvas .learn-sidebar .learn-brand { position: fixed; height: 6.5rem; width: 14rem; top: 0; padding: 20px; box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3); }
 
-.off-canvas .learn-sidebar .learn-brand #logo { display: inline-block; margin: 0 2.5rem 0.5rem; }
+.off-canvas .learn-sidebar .learn-brand #logo { display: inline-block; margin: 0 2.5rem 0.1rem 0.75rem; }
 
 .off-canvas .learn-sidebar .learn-brand #logo path { fill: rgba(255, 255, 255, 0.8) !important; }
 
