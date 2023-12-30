@@ -26,9 +26,22 @@
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 101) %}
-    {% do assets.addJs('theme://js/learn4.js', { group:'bottom' }) %}
+    {% if not grav.uri.param('chromeless') %}{% do assets.addJs('theme://js/learn4.js', { group:'bottom' }) %}{% endif %}
     {% do assets.addJs('theme://js/kekule/dist/kekule.js?module=widget,chemWidget,io,spectroscopy') %}
 {% endblock %}
+
+<script>
+
+window.addEventListener('load', function() {
+	let message = { height: document.body.scrollHeight, width: document.body.scrollWidth };	
+
+	// window.top refers to parent window
+	
+	console.log(message);
+	parent.postMessage(message, "*");
+});
+
+</script>
 
 {% block assets deferred %}
     {{ assets.css()|raw }}
@@ -43,19 +56,24 @@
             <i class="fa fa-bars"></i>
         </a>
 
+        {% if not grav.uri.param('chromeless') %}
         {% block sidebar %}
         <div id="sidebar-id" class="learn-sidebar off-canvas-sidebar">
             <!-- off-screen sidebar -->
             {% include 'partials/sidebar.html.twig' %}
         </div>
         {% endblock %}
+        {% endif %}
 
         <a class="off-canvas-overlay" href="#close"></a>
 
         <div class="learn-content off-canvas-content">
+
+            {% if not grav.uri.param('chromeless') %}
             {% block topbar %}
                 {% include 'partials/topbar.html.twig' %}
             {% endblock %}
+            {% endif %}
 
             <section id="start">
                 {% block body %}
